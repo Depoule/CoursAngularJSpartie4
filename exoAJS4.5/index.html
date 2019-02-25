@@ -1,0 +1,14 @@
+<!Doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercice 4.5</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+    </head>
+    <body ng-app>
+            <button ng-click="textShow = true">Afficher</button>
+            <button ng-click="textShow = false">Cacher</button>
+            <!-- cette expression montre l'élément myShow uniquement si l'expression retourne true -->
+            <p ng-show="textShow">Exercice 4.5</p>
+    </body>
+</html>

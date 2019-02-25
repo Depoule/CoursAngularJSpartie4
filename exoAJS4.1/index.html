@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercice 4.1</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </head>
+<body ng-app="app" ng-controller="changeNumberController">
+  <!--Déclaration de la variable number-->
+  <p>{{count}}</p>
+  <!--sur la directive ng-click du bouton -, number est égale à number-1-->
+  <button ng-click="count = count-1" type="button" name="minus">-</button>
+  <!--sur la directive ng-click du bouton +, number est égale à number+1-->
+  <button ng-click="count = count+1" type="button" name="plus">+</button>
+</body>
+</html>

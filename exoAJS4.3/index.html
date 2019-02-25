@@ -1,0 +1,19 @@
+<!Doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercice 4.3</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body ng-app="carApp">
+            <div ng-controller="carCtrl">
+                <div ng-repeat="car in voiture | filter : {couleur : 'verte'}">
+                        <p>{{car.marque + ' - ' + car.couleur}}<p>
+                </div>
+                <div ng-repeat="car in voiture" ng-if="car.couleur == 'verte'">
+                        <p>{{car.marque + ' - ' + car.couleur}}<p>
+                </div>
+            </div>
+    </body>
+</html>

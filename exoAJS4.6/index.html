@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercice 4.6</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body ng-app>
+      <p ng-show="textShow">Paragraphe1</p>
+      <p ng-hide="textShow">Paragraphe2</p>
+      <!-- au clic sur le bouton p1 si textShow renvoi bien à ng-show, ce sera vrai donc il affichera le paragraphe 1 -->
+      <button ng-click="textShow = true">Bouton P1</button>
+      <!-- au clic sur le bouton p2 si textShow ne renvoi pas à ng-show, en l'occurence ici ce sera ng-hide, alors ce sera faux et il affichera le paragraphe 2 -->
+      <button ng-click="textShow = false">Bouton P2</button>
+    </body>
+</html>
